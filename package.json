@@ -5,11 +5,14 @@
   "license": "MIT",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.7.0",
     "dotenv": "^10.0.0",
-    "graphql-yoga": "1.14.10"
+    "graphql-yoga": "1.14.10",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.12"
   },
   "scripts": {
-    "start": "nodemon src/index.js --exec babel-node"
+    "start": "nodemon src/index.js --ext js,graphql --exec babel-node"
   }
 }
